@@ -1,0 +1,119 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.84), rgba(0, 0, 0, 0.87)), url(images/allteams.jpg);
+    background-size: 100vw;
+}
+
+header {
+    margin: 40px;
+}
+
+header img {
+    position: absolute;
+    margin: 25px;
+    width: 100px;
+}
+
+nav {
+    text-align: center;
+    margin: 20px 30px 20px 10px;
+    padding: 10px;
+}
+
+nav ul li {
+    text-align: center;
+    list-style: none;
+    text-decoration: none;
+    padding: 10px;
+    margin: 10px;
+    display: inline;
+}
+
+nav ul li a{
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    margin: 5px;
+    border: none;
+    transition: 0.2s;
+}
+
+nav ul li a:hover {
+    color: #e30000;
+}
+
+.campus{
+    width: 80%;
+    margin: 20px 20px 40px 150px;
+    text-align: center;
+    padding-top: 50px;
+    display: inline-block;
+}
+
+.campus h1 {
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 48px;
+    padding: 30px 10px 30px 10px;
+    border: 2px solid #ffffff;
+    transition: 0.25s;
+    border-radius: 1px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.78))
+}
+
+.campus h1:hover {
+    border-radius: 10px;
+    font-size: 40px;
+    background-image: linear-gradient(rgb(51, 51, 51), rgb(38, 38, 38))
+}
+
+.campus-col{
+    flex-basis: 32%;
+    width: 25%;
+    border-radius: 10px;
+    margin: 30px;
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+}
+.campus-col img{
+    width: 100%;
+    display: block;
+}
+.layer{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.35s;
+}
+.layer:hover{
+    background: rgba(226, 0, 0, 0.62);
+}
+
+.layer h3{
+    width: 100%;
+    font-weight: 800;
+    color: #fff;
+    font-size: 20px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.4s;
+}
+.layer:hover h3{
+    bottom: 30%;
+    opacity: 1;
+}
+
+footer {
+    width: 100%;
+    margin: 100px 0 0 0;
+}

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link href="data:image/x-icon;base64,AAABAAEAEBAAAAAAAABoBQAAFgAAACgAAAAQAAAAIAAAAAEACAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAk5OTAD09PQBfX/QAJSXgAMDAwAA2NjYAKCgiAFpa2wCFhYUAGBhdAAQEBAAwMKcAl5eXAP///wBjY7sABAQYAKmpqQAFBTEAsrKyAAICDgAPDw8AcHD/AEFBQABSUlsAenrkABERaQAYGZYAra2tAAEBCABXV1cAcnK9AExMiABaWocAExMTAFZWxQBQUFAAAwMDAA0NTgBiYmIA9fX1AJaWlgBAQEAAdHR0AKioqABsbJgARUVlAHx88gChoaEAAQEGACAgwwBmZnQAVFRUAF1dXQAQEBAAS0v0AG1t7QAiIiIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMAsiFQUlAQAAAAAAAAAAADQOJwAAAAAEGhAAAAAAAAAADg42NgAUMTIbJgAAAAAAAAAODg45BzcMChIdAAAAACoCHA4eBgIuAwgjIBcAACQkJCQODg4kJBY4DyEYJAAnJycnNSgoKBMnLxkfLTMAKysrKysrKysrKysrKysrAAkJCQkJCQkJCQkJCQkJCQAADQ0NKSkNKQ0NKQ0pDQAAAAAsESwsERERESwREQAAAP//AACAAwAAgAMAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAgAMAAMAHAAA="
+              rel="icon" type="image/x-icon"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="contactus.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+        <title>Formula One</title>
+    </head>
+    <body>
+        <header>
+            <a href="https://www.formula1.com/"><img src="images/F1.svg.png"></a>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="f1newsrss.html">GALLERY</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="contactus.html">LOGIN</a></li>
+                <li><a href="apipage.html">WEATHER INFO</a></li>
+            </ul>
+        </nav>
+        <h2>
+            Join the Community!
+        </h2>
+        <div class="container">
+            <div class="card">
+                <div class="inner-box" id="card">
+                    <div class="card-front">
+                        <h2>Login</h2>
+                        <form>
+                            <input type="email" class="input-box"
+                                       placeholder="username@domain.com" required>
+
+                            <input type="password" class="input-box"
+                                   placeholder="Passcode" required>
+
+                            <button type="submit" class="submit-btn">Login</button>
+
+                            <input type="checkbox"><span>Remember Me</span>
+                        </form>
+                        <button type="button" class="btn" onclick="openRegister()">
+                            New User?
+                        </button>
+                    </div>
+                    <div class="card-back">
+                        <h2>Register</h2>
+                        <form>
+                            <input type="text" class="input-box"
+                                   placeholder="Your Name" required>
+
+                            <input type="email" class="input-box"
+                                   placeholder="youremail@domain.com" required>
+
+                            <input type="email" class="input-box"
+                                   placeholder="Passcode" required>
+
+                            <button type="submit" class="submit-btn">Login</button>
+
+                            <input type="checkbox"><span>Remember Me</span>
+                        </form>
+                        <button type="button" class="btn" onclick="openLogin()">
+                            Have an Account?
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            var card = document.getElementById("card");
+            function openRegister(){
+                card.style.transform = "rotateY(-180deg)"
+            }
+            function openLogin(){
+                card.style.transform = "rotateY(0deg)"
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,140 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(images/apibackground.jpg);
+    background-size: cover;
+}
+
+header {
+    margin: 40px;
+}
+
+header img {
+    position: absolute;
+    margin: 25px;
+    width: 100px;
+}
+
+nav {
+    text-align: center;
+    margin: 20px 30px 20px 10px;
+    padding: 10px;
+}
+
+nav ul li {
+    text-align: center;
+    list-style: none;
+    text-decoration: none;
+    padding: 10px;
+    margin: 10px;
+    display: inline-block;
+    position: relative;
+}
+
+nav ul li a{
+    display: inline-block;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    margin: 5px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #e30000;
+}
+
+.database-section {
+    border-radius: 10px;
+    margin: 30px 30px;
+    padding: 20px 20px;
+    background-color: rgba(7, 7, 7, 0.63);
+    text-align: center;
+    display: block;
+}
+
+
+.driver-content {
+    text-align: center;
+    display: block;
+}
+
+h2 {
+    color: #ffffff;
+    font-size: 46px;
+    font-weight: bold;
+}
+
+.search-box {
+    width: 30%;
+    background: transparent;
+    border: 1px solid #ffffff;
+    margin: 6px 0;
+    height: 42px;
+    border-radius: 9px;
+    padding: 0 10px;
+    box-sizing: border-box;
+    outline: none;
+    text-align: center;
+    color: #ffffff;
+}
+
+button {
+    width: 10%;
+    background-color: #000000;
+    border: none;
+    margin: 20px 0 10px;
+    height: 32px;
+    font-size: 12px;
+    border-radius: 5px;
+    padding: 0 10px;
+    box-sizing: border-box;
+    outline: none;
+    color: #ffffff;
+    transition: 0.2s;
+}
+
+button:hover {
+    background-color: #bd0000;
+}
+
+.button.btn {
+    margin-top: 70px;
+    text-align: center;
+    display: inline-block;
+    width: 20%;
+}
+
+.weather {
+    margin: 40px 380px;
+    padding: 40px 40px;
+    text-align: center;
+    display: block;
+    border-radius: 8px;
+    border: 2px solid #e30000;
+}
+
+.city {
+    color: #ffffff;
+    font-size: 36px;
+}
+
+.description {
+    color: #ffffff;
+}
+
+.humidity {
+    color: #ffffff;
+}
+
+.wind {
+    color: #ffffff;
+}
+
+.temp {
+    color: #ffffff;
+    font-size: 32px;
+    font-weight: bold;
+}
